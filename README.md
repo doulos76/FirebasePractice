@@ -107,3 +107,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 	})
 	```
 
+* update method
+
+  - `updateChildValue`를 이용해서 update 할 수 있음.
+
+
+	```Swift
+	func updateChild() {
+   		let ref = Database.database().reference()
+	    ref.updateChildValues(["test": "Update Hello world!"])
+   }
+	```

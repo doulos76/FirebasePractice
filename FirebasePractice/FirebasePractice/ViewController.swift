@@ -19,7 +19,8 @@ class ViewController: UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    updateLabel()
+//    updateLabel()
+    updateChild()
   }
 
   // MARK:- private method
@@ -46,6 +47,11 @@ class ViewController: UIViewController {
       }
 
     }
+  }
+  
+  func updateChild() {
+    let ref = Database.database().reference()
+    ref.updateChildValues(["test": "Update Hello world!"])
   }
 
 }
