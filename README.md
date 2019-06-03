@@ -114,7 +114,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 	```Swift
 	func updateChild() {
-   		let ref = Database.database().reference()
-	    ref.updateChildValues(["test": "Update Hello world!"])
-   }
+		let ref = Database.database().reference()
+		ref.updateChildValues(["test": "Update Hello world!"])
+	}
 	```
